@@ -1,1 +1,4 @@
 #!/usr/bin/bash
+echo "$PYCODE" >> pythonstoker.py
+python3 "pythonstoker.py"
+rm pythonstoker.py
