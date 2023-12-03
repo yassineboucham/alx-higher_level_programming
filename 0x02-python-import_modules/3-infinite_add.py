@@ -5,4 +5,4 @@ if __name__ == "__main__":
     vars = sys.argv[1:]
     for i in vars:
         res += int(i)
-    print("".format(res))
+    print("{}".format(res))
