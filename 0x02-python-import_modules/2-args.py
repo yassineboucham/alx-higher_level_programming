@@ -3,7 +3,7 @@ if __name__ == "__main__":
     v = 0
     import sys
     arguments = sys.argv[1:]
-    if(len(arguments) != 0):
+    if (len(arguments) != 0):
         print("{} argument:".format(len(arguments)))
     else:
         print("{} argument.".format(len(arguments)))
