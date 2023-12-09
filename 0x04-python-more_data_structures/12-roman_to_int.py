@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or roman_string is None:
-        return None
+        return 0
     number = 0
     i = 0
     while i < len(roman_string):
@@ -27,4 +27,6 @@ def roman_to_int(roman_string):
             elif roman_string[i] == 'M':
                 number += 1000
             i += 1
-    return number
+    if (number > 0):
+        return number
+    return None
