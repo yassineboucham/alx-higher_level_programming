@@ -7,4 +7,3 @@ def uniq_add(my_list=[]):
             res += i
             see.append(i)
     return res
-
