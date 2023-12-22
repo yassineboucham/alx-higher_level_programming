@@ -6,7 +6,6 @@ class Square():
     """Defines a square."""
     
     def __init__(self, size=0):
-        """intalise"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -21,6 +20,7 @@ class Square():
     def size(self):
         """getter"""
         return self.__size
+
 
     def area(self):
         """returns the current square area"""
