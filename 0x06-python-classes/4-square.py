@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-"""Squer module."""
-
-
 class Square():
     """Defines a square."""
 
+
+    def __init__(self, size=0):
+        """initialase"""
+        self.size = size
+
+    @property
+    def size(self):
+        """getter"""
+        return self.__size
+
+    @size.setter
     def size(self, value):
         """setter """
         if type(value) is not int:
@@ -13,13 +21,6 @@ class Square():
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
-    def size(self):
-        """getter"""
-        return self.__size
-
-    def __init__(self, size=0):
-            self.__size = size
 
     def area(self):
         """returns the current square area"""
