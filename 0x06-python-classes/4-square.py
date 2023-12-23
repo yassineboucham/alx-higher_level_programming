@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""squer module"""
+
+
 class Square():
     """Defines a square."""
 
