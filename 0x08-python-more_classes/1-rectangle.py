@@ -4,13 +4,12 @@
 
 class Rectangle:
     """A class representing a rectangle."""
-    __width = 0
-    __height = 0
+
 
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle instance."""
-        self.__width = width
-        self.__height = height
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
