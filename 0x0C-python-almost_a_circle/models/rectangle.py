@@ -116,6 +116,7 @@ class Rectangle(Base):
             height += 1
 
     def update(self, *args):
+        """update"""
         if args:
             if args[0] is not None:
                 self.id = args[0]
