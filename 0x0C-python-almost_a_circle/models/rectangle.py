@@ -115,7 +115,7 @@ class Rectangle(Base):
             print("")
             height += 1
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update"""
         if args:
             if args[0] is not None:
@@ -128,3 +128,5 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) > 4:
                 self.y = args[4]
+        for key, value in kwargs.items():
+            setattr(self, key, value)
