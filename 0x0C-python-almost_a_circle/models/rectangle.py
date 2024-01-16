@@ -25,54 +25,52 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """getter"""
+        """getter width"""
         return self.__width
 
     @width.setter
     def width(self, width):
-        """setter"""
+        """setter width"""
         self.validation("width", width)
         self.__width = width
 
     @property
     def height(self):
-        """getter"""
+        """getter height"""
         return self.__height
 
     @height.setter
     def height(self, height):
-        """setter"""
+        """setter height"""
         self.validation("height", height)
         self.__height = height
 
     @property
     def x(self):
-        """getter"""
+        """getter x"""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """setter"""
+        """setter x"""
         self.validation("x", x)
         self.__x = x
 
     @property
     def y(self):
-        """getter"""
+        """getter y"""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """setter"""
+        """setter y"""
         self.validation("y", y)
         self.__y = y
 
     def validation(self, attr_name, attr_value):
         """validation"""
-
         if not isinstance(attr_value, int):
             raise TypeError("{} must be an integer".format(attr_name))
-
         if attr_name in ("width", "height"):
             if attr_value <= 0:
                 raise ValueError("{} must be > 0".format(attr_name))
