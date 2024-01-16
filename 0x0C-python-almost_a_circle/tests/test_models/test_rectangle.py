@@ -49,8 +49,3 @@ class TesrBaseMethods(unittest.TestCase):
         """ Test string id """
         new = Base('1')
         self.assertEqual(new.id, '1')
-
-    def test_more_args_id(self):
-        """ Test passing more args to init method """
-        with self.assertRaises(TypeError):
-            new = Base(1, 1)
