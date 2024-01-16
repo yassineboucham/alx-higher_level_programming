@@ -78,7 +78,7 @@ class Rectangle(Base):
                 raise ValueError("{} must be >= 0".format(attr_name))
 
     def area(self):
-        """area laholaaaaaaa"""
+        """area : self.__height * self.__width"""
         return self.__height * self.__width
 
     def display(self):
