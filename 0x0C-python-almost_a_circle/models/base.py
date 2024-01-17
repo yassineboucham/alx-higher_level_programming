@@ -38,9 +38,6 @@ class Base:
             pass
         else:
             for obj in list_objs:
-                if obj is not None:
-                    save_list.append(obj.to_dictionary())
-                else:
-                    save_list.append([])
+                save_list.append(obj.to_dictionary())
             with open("{}.json".format(cls.__name__), "w", encoding="utf_8") as f:
                 f.write(cls.to_json_string(save_list))
