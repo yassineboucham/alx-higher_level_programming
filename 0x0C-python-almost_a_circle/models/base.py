@@ -6,6 +6,8 @@ base
 
 """
 import json
+import csv
+import os.path
 
 
 class Base:
@@ -31,7 +33,9 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """save_to_file"""
-        if list_objs is not None:
-            list = [o.to_dictionary() for o in list_objs]
-        with open("{}.json".format(cls.__name__), "a", encoding="utf_8") as f:
-            f.write(cls.to_json_string(list))
+        save_list = []
+        for obj in list_objs:
+            if obj is not None:
+               save_list.append(obj.to_dictionary())
+            with open("{}.json".format(cls.__name__), "a", encoding="utf_8") as f:
+                f.write(cls.to_json_string(save_list))
