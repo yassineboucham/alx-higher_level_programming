@@ -34,9 +34,7 @@ class Base:
     def save_to_file(cls, list_objs):
         """save_to_file"""
         save_list = []
-        if not list_objs:
-            pass
-        else:
+        if list_objs is not None:
             for obj in list_objs:
                 save_list.append(obj.to_dictionary())
             with open("{}.json".format(cls.__name__), "w", encoding="utf_8") as f:
