@@ -1,2 +1,2 @@
--- This script list all databases in MySQL server
-select name FROM sys.databases;
+-- list all databases in MySQL server
+SELECT name FROM sys.databases;
