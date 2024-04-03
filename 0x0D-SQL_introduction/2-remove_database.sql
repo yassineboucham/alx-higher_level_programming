@@ -1,2 +1,2 @@
 -- script that deletes the database
-DROP DATABASE IF NOT EXISTS hbtn_0c_0;
+DELETE DATABASE IF EXISTS hbtn_0c_0;
