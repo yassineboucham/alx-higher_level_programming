@@ -2,14 +2,14 @@
 
 const { argv } = require('node:process');
 
-let len = 0
+let len = 0;
 
 argv.forEach(element => {
-    len++
+    len++;
 });
 
 if (len <= 2) {
-    console.log('No argument')
+    console.log('No argument');
 } else {
-    console.log(argv[3])
+    console.log(argv[3]);
 }
