@@ -7,4 +7,3 @@ if (Number(argv[2])) {
 } else {
     console.log('Not a number');
 }
-lll
