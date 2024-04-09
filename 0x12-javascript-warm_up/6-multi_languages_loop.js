@@ -7,4 +7,3 @@ const myArray = [
   ];
   
   myArray.forEach(elem => console.log(elem));
-  
