@@ -8,7 +8,7 @@ argv.forEach(element => {
     len++
 });
 
-if (argv.length <= 2) {
+if (len <= 2) {
     console.log('No argument')
 } else {
     console.log(argv[3])
