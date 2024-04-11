@@ -9,7 +9,7 @@ module.exports = class Rectangle {
     }
 
     rotate(w, h) {
-        this.width = w;
-        this.height = h;
+        this.width = this.height;
+        this.height = this.width;
     }
   };
