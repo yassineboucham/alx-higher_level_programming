@@ -6,4 +6,4 @@ function add(a, b) {
     return a + b;
 }
 
-add(Number(argv[2]), Number(argv[3]));
+console.log(add(Number(argv[2]), Number(argv[3])));
