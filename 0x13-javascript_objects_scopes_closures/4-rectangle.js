@@ -12,4 +12,9 @@ module.exports = class Rectangle {
         this.width = this.height;
         this.height = this.width;
     }
+
+    double(w, h) {
+        this.width = this.width*2;
+        this.height = this.height*2;
+    }
   };
