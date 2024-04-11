@@ -7,3 +7,7 @@ matrix = [
 ]
 print(matrix_divided(matrix, 3))
 print(matrix)
+try:
+    print(matrix_divided(matrix, 0))
+except Exception as ex:
+    print(ex)

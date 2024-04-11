@@ -59,3 +59,10 @@ class Base:
             new = None
         new.update(**dictionary)
         return new
+
+    @classmethod
+    def load_from_file(cls):
+        """load_from_file"""
+        with open("{}".format(cls.__name__), "r", encoding="utf_8") as f:
+            list = f.read(f)
+        return list
