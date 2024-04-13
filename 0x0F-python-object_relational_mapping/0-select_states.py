@@ -5,8 +5,8 @@
 Print the row of a table using MySQLdb
 
 """
-import sys
 import MySQLdb
+import sys
 
 if __name__ == "__main__":
     username = sys.argv[1]
