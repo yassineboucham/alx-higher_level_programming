@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -s $1 | wc -l
+#size in byte
+curl -s $1 | wc -c
