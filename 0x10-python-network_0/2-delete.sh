@@ -1,3 +1,3 @@
 #!/bin/bash
-#send to delet
-curl -s $1 -X DELET
+#send to delet recuest
+curl -s $1 -X DELETE
