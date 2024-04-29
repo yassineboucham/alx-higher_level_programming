@@ -6,7 +6,7 @@ import urllib.request
 
 
 with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as html:
-    fetch = html.read()
+    fetch = html.get()
 print("Body response:")
 print("\t- type: {}".format(type(fetch)))
 print("\t- content: {}".format(fetch.decode("utf-8")))
