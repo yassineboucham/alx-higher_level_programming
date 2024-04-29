@@ -12,4 +12,5 @@ if __name__ == "__main__":
     url = sys.argv[1]
     if url:
         req = requests.get(url)
-        print(req.headers['X-Request-Id'])
+        value = req.headers['X-Request-Id']
+        print(value)
